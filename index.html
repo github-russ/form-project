@@ -1,6 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        
-    </body>
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <form method="get" id="survey-form"> <!-- User Story #3, #17-->
+
+        <!-- Title -->
+        <div id="title">
+            <h1>Ultimate Sneakerheads Survey</h1> <!-- User Story #1 -->
+        </div>
+
+        <!-- Description -->
+        <p id="description">Welcome to the ultimate sneakerheads survey! We want to know which sneaker brands and styles rule your collection. Share your favorite brands, preferred sneaker types, and key features you look for. Your insights will help us understand the sneaker culture better. Let’s lace up and dive in!</p> <!-- User Story #2 -->
+
+        <!-- Name field -->
+        <label id="name-label" for="name">Name:</label> <!-- User Story #10 -->
+        <input id="name" type="text" name="name" placeholder="Enter your name here" required> <!-- User Story #4, #11 -->
+        <br />
+
+        <!-- Email field -->
+        <label id="email-label" for="email">Email:</label> <!-- User Story #10 -->
+        <input id="email" type="email" name="email" placeholder="Enter your email address here" required> <!-- User Story #5, #6, #11 -->
+        <br />
+
+        <!-- Age field -->
+        <label id="number-label" for="number">Age:</label> <!-- User Story #10 -->
+        <input id="number" type="number" name="age" placeholder="Age" min="0" max="150"> 
+        <!-- User Story #7, #8, #9, #11 -->
+        <br />
+
+        <!-- Dropdown for favorite sneaker brand -->
+        <label for="dropdown">Select your favorite sneaker brand:</label>
+        <select id="dropdown" name="brand"> <!-- User Story #12 -->
+            <option selected disabled>Select your option</option>
+            <option value="nike">Nike</option>
+            <option value="adidas">Adidas</option>
+            <option value="puma">Puma</option>
+            <option value="jordan">Jordan</option>
+            <option value="new-balance">New Balance</option>
+            <option value="asics">Asics</option>
+            <option value="other">Other</option>
+        </select>
+        <br />
+
+        <!-- Textarea for specifying "Other" choice -->
+        <label for="other-comments">If you selected "Other," please specify:</label>
+        <textarea id="other-comments" name="other-comments" rows="4" cols="50" placeholder="Please specify..."></textarea> 
+        <br /><br />
+
+        <!-- Radio buttons for type of sneakers -->
+        <fieldset>
+            <legend>Choose your favorite type of sneakers:</legend>
+            <label>
+                <input type="radio" name="sneaker-type" value="running">
+                Running Shoes
+            </label><br />
+            <label>
+                <input type="radio" name="sneaker-type" value="casual">
+                Casual Sneakers
+            </label><br />
+            <label>
+                <input type="radio" name="sneaker-type" value="basketball">
+                Basketball Sneakers
+            </label><br />
+            <label>
+                <input type="radio" name="sneaker-type" value="retro">
+                Retro Sneakers
+            </label><br />
+            <label>
+                <input type="radio" name="sneaker-type" value="designer">
+                Designer Sneakers
+            </label>
+        </fieldset> <!-- User Story #13 -->
+        <br />
+
+        <!-- Checkboxes for preferred features -->
+        <fieldset>
+            <legend>Which features do you value the most in sneakers?</legend>
+            <label>
+                <input type="checkbox" name="features" value="comfort">
+                Comfort
+            </label><br />
+            <label>
+                <input type="checkbox" name="features" value="style">
+                Style
+            </label><br />
+            <label>
+                <input type="checkbox" name="features" value="durability">
+                Durability
+            </label><br />
+            <label>
+                <input type="checkbox" name="features" value="rarity">
+                Rarity
+            </label><br />
+            <label>
+                <input type="checkbox" name="features" value="price">
+                Price
+            </label>
+        </fieldset> <!-- User Story #14 -->
+        <br />
+
+        <!-- Textarea for additional comments -->
+        <label for="comments">Additional comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter any additional comments or thoughts here"></textarea> <!-- User Story #15 -->
+        <br />
+
+        <!-- Submit button -->
+        <button id="submit" type="submit">Submit</button> <!-- User Story #16 -->
+    </form>
+</body>
 </html>
