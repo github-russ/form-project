@@ -3,6 +3,7 @@
 <head>
     <title>Survey Form</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form method="get" id="survey-form"> <!-- User Story #3, #17-->
@@ -47,8 +48,8 @@
 
         <!-- Textarea for specifying "Other" choice -->
         <label for="other-comments">If you selected "Other," please specify:</label>
-        <textarea id="other-comments" name="other-comments" rows="4" cols="50" placeholder="Please specify..."></textarea> 
-        <br /><br />
+        <textarea id="other-comments" name="other-comments" rows="1" cols="40" placeholder="Please specify..."></textarea> 
+        <br />
 
         <!-- Radio buttons for type of sneakers -->
         <fieldset>
@@ -56,19 +57,19 @@
             <label>
                 <input type="radio" name="sneaker-type" value="running">
                 Running Shoes
-            </label><br />
+            </label>
             <label>
                 <input type="radio" name="sneaker-type" value="casual">
                 Casual Sneakers
-            </label><br />
+            </label>
             <label>
                 <input type="radio" name="sneaker-type" value="basketball">
                 Basketball Sneakers
-            </label><br />
+            </label>
             <label>
                 <input type="radio" name="sneaker-type" value="retro">
                 Retro Sneakers
-            </label><br />
+            </label>
             <label>
                 <input type="radio" name="sneaker-type" value="designer">
                 Designer Sneakers
@@ -78,23 +79,23 @@
 
         <!-- Checkboxes for preferred features -->
         <fieldset>
-            <legend>Which features do you value the most in sneakers? (Check all that apply)</legend>
+            <legend>Which features do you value the most in sneakers?</legend>
             <label>
                 <input type="checkbox" name="features" value="comfort">
                 Comfort
-            </label><br />
+            </label>
             <label>
                 <input type="checkbox" name="features" value="style">
                 Style
-            </label><br />
+            </label>
             <label>
                 <input type="checkbox" name="features" value="durability">
                 Durability
-            </label><br />
+            </label>
             <label>
                 <input type="checkbox" name="features" value="rarity">
                 Rarity
-            </label><br />
+            </label>
             <label>
                 <input type="checkbox" name="features" value="price">
                 Price
