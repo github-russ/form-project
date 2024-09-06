@@ -70,6 +70,10 @@ legend {
     margin-bottom: 15px;
 }
 
+#comments {
+    height: 100px;
+}
+
 button {
     background-color: #007bff;
     color: #ffffff;
